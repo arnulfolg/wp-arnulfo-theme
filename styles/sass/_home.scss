@@ -1,0 +1,74 @@
+
+ 
+.home_post_excerpt_container {
+	margin-top: 3rem;
+	padding: 0 2rem;
+	container-type: inline-size;
+}
+
+.home_post_excerpt_container ul {
+	max-width: 980px;
+	display: grid;
+	grid-template-columns: repeat(1, auto);
+	gap: 4rem;
+	margin: 0 auto;
+}
+
+@container (min-width: 700px) {
+  .home_post_excerpt_container ul {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@supports not (container-type: inline-size) {
+	@media (min-width: 700px) {
+		.home_post_excerpt_container ul {
+			grid-template-columns: repeat(2, auto);
+		}
+	}
+}
+
+.home_post_excerpt_container ul li {
+	margin: 0;
+}
+
+.home_post_excerpt {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.home_post_excerpt .wp-block-post-featured-image {
+	margin: 0;
+}
+
+.home_post_excerpt .wp-block-post-title {
+	margin: 0;
+	text-align: center;
+	padding: 0 1rem;
+}
+
+.home_post_excerpt a {
+	text-decoration: none;
+}
+
+.home_post_excerpt .wp-block-post-date {
+	margin: 0;
+	text-align: center;
+	padding: 0 1rem;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.home_post_excerpt .wp-block-post-excerpt p, .home_post_excerpt .wp-block-post-excerpt {
+	margin: 0;
+	text-align: center;
+	padding: 0 1rem;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.home_post_excerpt h2 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+}

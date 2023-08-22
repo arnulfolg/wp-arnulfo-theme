@@ -1,0 +1,20 @@
+
+.footer {
+	background-color: #FFD30F;
+	color:  black;
+	padding: 3rem;
+	text-align: center;
+}
+
+.wp-site-blocks .footer {
+	margin-top: 4rem;
+}
+
+.footer section{
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+	flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,54 @@
+<!-- wp:group {"layout":{"inherit":true}} -->
+
+<!-- wp:template-part {"slug":"header","tagName":"header", "className": "blog_header"} /-->
+
+<main class="single_container">
+	
+	<article class="single_post">
+		<header class="single_post_header">
+			<!-- wp:post-title {"level":1} /-->
+			<!-- wp:post-date {"format":"F j, Y", "className":"single_post_header--date"} /-->
+			<!-- wp:post-featured-image /-->
+		</header>
+		
+		<!-- wp:post-content /-->
+	<!-- wp:group -->
+		
+		<!-- wp:template-part {"slug":"score-gaming"} /-->
+	<!-- /wp:group -->
+	
+	<footer class="single_post_footer">
+		<!-- wp:post-author  /-->
+		<div class="single_post_footer--icons">
+			<i class="fa-solid fa-folder"></i>
+			<!-- wp:post-terms {"term":"category"} /-->
+		</div>
+		<div class="single_post_footer--icons">
+			<i class="fa-solid fa-tags"></i>
+			<!-- wp:post-terms {"term":"post_tag"} /-->
+		</div>
+	</footer>
+</article>
+<nav class="single_post_navigation">
+	<section class="single_post_navigation--previous">
+		<i class="fa-solid fa-angles-left"></i>
+		<!-- wp:post-navigation-link {"type":"previous","showTitle":true,"linkLabel":true, "icon": "Holaaaaaa"} /-->
+	</section>
+	<section class="single_post_navigation--next">
+		<!-- wp:post-navigation-link {"type":"next", "showTitle":true,"linkLabel":true} /-->
+		<i class="fa-solid fa-angles-right"></i>
+	</section>
+</nav>
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+<section class="single_comments">
+	<!-- wp:post-comments /-->
+</section>
+
+</main>
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer", "className":"footer"} /-->
+
+<!-- /wp:group -->

@@ -1,0 +1,35 @@
+/*
+Theme Name: Tema de Arnulfo
+Theme URI: https://wordpress.org/themes/twentytwentythree
+Author: Arnulfo Loredo
+Author URI: https://arnulfo.dev
+Description: Tema basado en twentytwentytwo de wordpress. Este tema fue creado para ser usado en el blog personal de Arnulfo.
+Requires at least: 6.1.1
+Tested up to: 6.1.1
+Requires PHP: 7.4.32
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: arnulfotheme
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, accessibility-ready
+
+Twenty Twenty-Two WordPress Theme, (C) 2021 WordPress.org
+Twenty Twenty-Two is distributed under the terms of the GNU GPL.
+*/
+
+/*
+ * Font smoothing.
+ * This is a niche setting that will not be available via Global Styles.
+ * https://github.com/WordPress/gutenberg/issues/35934
+ */
+
+ @use 'styles/sass/_parts/header';
+ @use 'styles/sass/_parts/footer';
+ @use 'styles/sass/home';
+ @use 'styles/sass/single';
+ @use 'styles/sass/comments';
+ @use 'styles/sass/archive';
+ @use 'styles/sass/search';
+ @use 'styles/sass/blank';
+ @use 'styles/sass/page';
+ @use 'styles/sass/error-404';

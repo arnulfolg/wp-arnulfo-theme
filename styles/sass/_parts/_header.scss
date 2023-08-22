@@ -1,0 +1,80 @@
+.blog_header {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 78px 2px;
+    grid-template-areas: "NAV TITLE SOCIAL"
+                          "LINE LINE LINE";
+
+}
+
+.blog_header_hero {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 240px;
+    grid-template-areas: "NAV TITLE SOCIAL"
+						 ". . .";
+}
+
+.social-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.4rem;
+	padding: 0;
+}
+
+.social-nav li {
+	list-style: none;
+}
+
+.hero_image {
+	grid-area: 1 / 1 / -1 / -1;
+	z-index: -1;
+	height: 100%;
+}
+
+.blog_header_navigation--left {
+	grid-area: NAV;
+	padding-left: 1rem;
+}
+
+.blog_header_navigation--left .wp-block-page-list{
+	flex-wrap: nowrap;
+}
+
+.blog_header_navigation--right {
+	grid-area: SOCIAL;
+	padding-right: 1rem;
+}
+
+.blog_header_navigation--left, .blog_header_navigation--right a {
+	color: white;
+}
+
+
+.hero_image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.blog_header--yellow-line {
+    grid-area: LINE;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 158 11 / var(--tw-bg-opacity));
+}
+
+.blog_header_navigation--right {
+	justify-self: right;
+}

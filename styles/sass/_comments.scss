@@ -1,0 +1,48 @@
+
+.single_comments {
+	background-color: lightgray;
+	padding: 2rem;
+}
+
+.single_comments h3 {
+	margin: 0;
+}
+
+.single_comments .comment-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.single_comments .comment-form-comment,
+.single_comments .comment-form-author,
+.single_comments .comment-form-email,
+.single_comments .comment-form-url
+ {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.single_comments .comment-form-author input,
+.single_comments .comment-form-email input,
+.single_comments .comment-form-url input {
+	height: 42px;
+	border-radius: 4px;
+}
+
+.single_comments .comment-form-comment textarea {
+	min-height: 42px;
+	resize: vertical;
+	border-radius: 4px;
+}
+
+.single_comments  input.submit {
+	border-radius: 4px;
+	background-color: #FFD30F;
+	color: black;
+}
+
+.single_comments  input.submit:hover {
+	background-color: #462A00;
+	color: white;
+}

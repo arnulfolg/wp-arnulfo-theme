@@ -1,0 +1,65 @@
+
+ h1 {
+	font-family: 'Rubik';
+	font-weight: 700;
+ }
+h2, h3, h4, h5, h6 {
+	font-family: 'Rubik';
+	font-weight: 400;
+ }
+
+ p, div, input, label, li, button, textarea, time {
+	font-family: 'IBM Plex Sans';
+	font-weight: 300;
+ }
+ 
+
+.site_title {
+	grid-area: TITLE;
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 700;
+	text-transform: capitalize;
+	font-style: normal;
+	justify-self: center;
+	text-align: center;
+}
+
+.site_title a {
+	text-decoration: none;
+}
+
+
+.blog_header_navigation_default, .blog_header_navigation_default a {
+	color: black;
+}
+
+.wp-site-blocks main, .wp-site-blocks main > * {
+	margin: 0;
+}
+
+.wp-site-blocks main, .wp-site-blocks main .wp-block-separator {
+	margin: 0 auto;
+}
+
+.single_container, .error_404_container, .page_article_container, .blank_page_container, .search_container {
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+	max-width: 680px;
+	flex-wrap: nowrap;
+	padding-left: 1.4rem;
+	padding-right: 1.4rem;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	margin: 0 auto;
+}
+
+.wp-site-blocks main.single_container {
+	margin: 0 auto;
+}
+
+.wp-site-blocks main.archive_container {
+	margin: 0 auto;
+}
